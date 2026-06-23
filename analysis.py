@@ -144,3 +144,8 @@ print(classification_report(y3_test, y3_pred, target_names=['Not Highly Rated', 
 importances = pd.Series(clf.feature_importances_, index=X3.columns).sort_values(ascending=False)
 print("\nFeature Importances:")
 print(importances)
+
+# Export clustered data for PowerBI
+export_df = df[['title', 'authors', 'average_rating', 'ratings_count', 'num_pages', 'cluster_label']].copy()
+export_df.to_csv('books_clustered.csv', index=False)
+print("Saved books_clustered.csv")
