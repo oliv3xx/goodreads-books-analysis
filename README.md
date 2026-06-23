@@ -60,9 +60,6 @@ page counts, publishers, and review counts.
 ### Rating Distribution
 ![Rating Distribution](rating_distribution.png)
 
-### Popularity vs Rating
-![Popularity vs Rating](popularity_vs_rating.png)
-
 ### Book Clusters by Popularity and Rating
 ![Clusters](clusters.png)
 
